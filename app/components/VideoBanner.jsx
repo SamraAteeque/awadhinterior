@@ -24,6 +24,7 @@ export default function VideoBanner() {
                     poster="/IDV1-poster.jpg"
                     className='absolute top-0 left-0 w-full h-full object-cover z-0 transition-transform duration-700 ease-in-out group-hover:scale-105'
                 >
+                    <source src='/IDV1.webm' type='video/webm' />
                     <source src='/IDV1.mp4' type='video/mp4' />
                 </video>
             )}

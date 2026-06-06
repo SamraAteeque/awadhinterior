@@ -499,7 +499,7 @@ export default function AboutPage() {
       {/* Video Banner */}
       <div ref={videoRef} className='relative w-full h-[500px] overflow-hidden'>
         {isVideoInView && (
-          <video autoPlay loop muted playsInline className='absolute top-0 left-0 w-full h-full object-cover'><source src='/IDV1.mp4' type='video/mp4' /></video>
+          <video autoPlay loop muted playsInline preload="none" poster="/IDV1-poster.jpg" className='absolute top-0 left-0 w-full h-full object-cover'><source src='/IDV1.webm' type='video/webm' /><source src='/IDV1.mp4' type='video/mp4' /></video>
         )}
         <div className="absolute inset-0 bg-black/70 flex flex-col items-start justify-center text-left px-6 sm:px-12 md:px-20 z-10"><motion.h2 className='text-5xl md:text-6xl font-bricolage font-bold text-white mb-10' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.8, ease: 'easeOut' }}>Ready for an Upgrade? Let's Talk</motion.h2><motion.button className='px-8 py-4 cursor-pointer bg-[var(--accent-gold)] text-white font-bold rounded-full hover:bg-[#b89560] transition-colors text-lg' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>Contact Us</motion.button></div>
       </div>

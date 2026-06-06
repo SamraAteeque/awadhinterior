@@ -197,7 +197,10 @@ export default function PropertiesPage() {
 
         {/* --- CTA Section (Kept this one) --- */}
         <div className='relative w-full h-[50vh] overflow-hidden'>
-            <video autoPlay loop muted playsInline className='absolute top-0 left-0 w-full h-full object-cover'><source src='/IDV1.mp4' type='video/mp4' /></video>
+            <video autoPlay loop muted playsInline preload="none" poster="/IDV1-poster.jpg" className='absolute top-0 left-0 w-full h-full object-cover'>
+                <source src='/IDV1.webm' type='video/webm' />
+                <source src='/IDV1.mp4' type='video/mp4' />
+            </video>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
                 <motion.h2 className='text-4xl md:text-6xl font-bricolage font-bold text-white max-w-3xl' initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
                     Find a Space You Love
