@@ -1,26 +1,93 @@
 @import "tailwindcss";
+@import 'remixicon/fonts/remixicon.css';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color: #1A2E24;
+  --accent-gold: #C9A96E;
+  --bg-warm: #F7F4EF;
+  --black-color: #000;
+  --white-color: #fff;
+  --text-color: #415d43;
+  --text-dark: #111111;
+  --text-mid: #6B6560;
+  --text-light: #a1cca5;
+
+  --transition-regular: 0.3s;
+  --transition-slow: 0.6s;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer utilities {
+  .font-HK {
+    font-family: var(--font-HK), cursive;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .font-jost {
+    font-family: var(--font-jost), sans-serif;
+  }
+
+  .font-bricolage {
+    font-family: var(--font-bricolage), sans-serif;
+  }
+
+  .font-dm-serif {
+    font-family: var(--font-dm-serif), serif;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 }
 
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jost), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Applied only after CustomCursor mounts — never before JS is ready */
+@media (pointer: fine) {
+  .custom-cursor-active,
+  .custom-cursor-active a,
+  .custom-cursor-active button,
+  .custom-cursor-active input,
+  .custom-cursor-active textarea {
+    cursor: none !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-bricolage), sans-serif;
+}
+
+.active-links {
+  color: var(--black-color) !important;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }

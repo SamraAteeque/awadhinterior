@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1200" />
+  <title>OG Image Generator — Awadh Interior Designer</title>
+
+  <!--
+    HOW TO USE THIS FILE
+    ─────────────────────────────────────────────────────────────────────
+    1. Open this file in Google Chrome
+    2. Open DevTools → press F12
+    3. Click the "Toggle Device Toolbar" icon (phone/tablet icon, top-left of DevTools)
+    4. Set the dimensions to: Width 1200 × Height 630
+    5. Press Ctrl+Shift+P → type "Capture screenshot" → click it
+    6. Chrome saves a file. Rename it to: og-image.jpg
+    7. Move og-image.jpg into: awadhinteriordesigner/public/
+    8. Done. Your OG image is live.
+    ─────────────────────────────────────────────────────────────────────
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&family=Jost:wght@400;500&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #1e3432;
+    }
+
+    .og-card {
+      width: 1200px;
+      height: 630px;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ── Left Panel ── */
+    .left {
+      width: 52%;
+      height: 100%;
+      background: #1e3432;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 56px 52px 48px 56px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* subtle noise texture overlay */
+    .left::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 80%, rgba(161, 204, 165, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 80% 10%, rgba(255,255,255,0.04) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1.5px solid rgba(255,255,255,0.2);
+      flex-shrink: 0;
+    }
+
+    .logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .logo-text {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
+      font-size: 11px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 32px 0;
+    }
+
+    .eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #a1cca5;
+      margin-bottom: 20px;
+    }
+
+    .headline {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 1.05;
+      color: #ffffff;
+      letter-spacing: -1.5px;
+      margin-bottom: 10px;
+    }
+
+    .headline-italic {
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 46px;
+      color: #a1cca5;
+    }
+
+    .subline {
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.6;
+      margin-top: 18px;
+      max-width: 340px;
+    }
+
+    .bottom-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cities {
+      font-family: 'Jost', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .cta-pill {
+      background: #a1cca5;
+      color: #1e3432;
+      font-family: 'Jost', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 10px 22px;
+      border-radius: 100px;
+    }
+
+    /* ── Divider line ── */
+    .divider {
+      position: absolute;
+      left: 52%;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(255,255,255,0.12) 20%,
+        rgba(255,255,255,0.12) 80%,
+        transparent 100%
+      );
+      z-index: 3;
+    }
+
+    /* ── Right Panel ── */
+    .right {
+      width: 48%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .right img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* Dark gradient blending left edge into the dark panel */
+    .right::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 45%;
+      height: 100%;
+      background: linear-gradient(to right, #1e3432 0%, transparent 100%);
+      z-index: 1;
+    }
+
+    /* Bottom scrim for legibility */
+    .right::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 100%);
+      z-index: 1;
+    }
+
+    /* Badge on image */
+    .image-badge {
+      position: absolute;
+      bottom: 28px;
+      right: 28px;
+      z-index: 2;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      padding: 12px 18px;
+      text-align: right;
+    }
+
+    .image-badge .num {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      color: #ffffff;
+      line-height: 1;
+    }
+
+    .image-badge .label {
+      font-family: 'Jost', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      margin-top: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="og-card">
+
+    <!-- LEFT: Brand Panel -->
+    <div class="left">
+
+      <div class="logo-row">
+        <div class="logo-circle">
+          <!-- Path is relative to this HTML file inside /scripts -->
+          <img src="../public/logo.jpg" alt="Logo" />
+        </div>
+        <div class="logo-text">
+          Awadh Interior Designer
+          <span>Premium Interiors · Eastern UP</span>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <p class="eyebrow">Interior Design Services</p>
+        <h1 class="headline">
+          Spaces Designed<br />
+          <span class="headline-italic">to Live In.</span>
+        </h1>
+        <p class="subline">
+          Bespoke residential &amp; commercial interiors across
+          Azamgarh, Varanasi, Lucknow and Gorakhpur.
+        </p>
+      </div>
+
+      <div class="bottom-row">
+        <p class="cities">Azamgarh · Mau · Varanasi · Lucknow</p>
+        <div class="cta-pill">Free Consultation</div>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- RIGHT: Interior Photo -->
+    <div class="right">
+      <img src="../public/hero.jpg" alt="Interior" />
+      <div class="image-badge">
+        <div class="num">200+</div>
+        <div class="label">Projects Done</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
