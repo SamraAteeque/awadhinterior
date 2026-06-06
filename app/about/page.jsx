@@ -96,15 +96,15 @@ export default function AboutPage() {
         transition={{ duration: 1 }}
       >
         <Image src="/properties/p6.jpg" alt="Luxurious living room" fill className="object-cover z-0" priority />
-        <div className="absolute inset-0 z-10" />
+        <div className="absolute inset-0 bg-black/55 z-10" />
         <motion.div
           className="relative z-20 text-white px-4"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="font-jost text-[var(--primary-color)] uppercase tracking-widest mb-2">Our Story</p>
-          <h1 className="text-5xl text-[var(--primary-color)] md:text-8xl font-bricolage font-bold">
+          <p className="font-jost text-[var(--accent-gold)] uppercase tracking-widest mb-2">Our Story</p>
+          <h1 className="text-5xl text-white md:text-8xl font-bricolage font-bold">
             Crafting Spaces, <br />Creating Stories
           </h1>
         </motion.div>
@@ -154,12 +154,6 @@ export default function AboutPage() {
                 transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
               >
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
-                  {/*
-                    ACTION REQUIRED:
-                    Replace /team/member-1.jpg with a high-quality photo of the founder.
-                    Ideal: candid shot at a project site or in the office/studio.
-                    Avoid plain studio portraits — a natural environment builds more trust.
-                  */}
                   <Image
                     src="/team/member-1.jpg"
                     fill
@@ -196,27 +190,15 @@ export default function AboutPage() {
                 {/* Founder quote */}
                 <blockquote className="border-l-[3px] border-[var(--accent-gold)] pl-6 mb-8">
                   <p className="font-dm-serif italic text-xl text-[var(--text-dark)] leading-relaxed">
-                    {/*
-                      ACTION REQUIRED: Replace this with a real quote from the founder.
-                      Best quotes are specific, personal, and reveal a belief — not a slogan.
-                    */}
                     &ldquo;I started Awadh Interior because people in our cities deserved beautiful, functional spaces — not just in Mumbai or Delhi.&rdquo;
                   </p>
                 </blockquote>
 
                 <div className="space-y-5 font-jost text-[var(--text-mid)] text-base leading-relaxed mb-10">
                   <p>
-                    {/*
-                      ACTION REQUIRED: Replace with the real founder story.
-                      Include: where he grew up, what inspired him to get into design,
-                      the moment he decided to start Awadh Interior.
-                    */}
                     Growing up in Azamgarh, Kamaal saw a clear gap — the quality of interior design available in metros was simply not accessible in Eastern UP. Skilled craftsmen existed, but the design thinking, project management, and honest costing were missing. That gap became the founding idea for Awadh Interior Designer.
                   </p>
                   <p>
-                    {/*
-                      ACTION REQUIRED: Replace with real milestones and achievements.
-                    */}
                     Over 5 years and 200+ projects across Azamgarh, Mau, Varanasi, Lucknow, and Gorakhpur, the firm built its reputation on three non-negotiables: a 3D walkthrough before any work begins, itemised transparent costing, and delivery on the date promised.
                   </p>
                 </div>
@@ -426,7 +408,7 @@ export default function AboutPage() {
       <section className='px-[8%] lg:px-[12%] py-20 lg:py-28'>
         <div className="container mx-auto">
           {/* Animated Header */}
-          <motion.h1
+          <motion.h2
             className='text-6xl lg:text-8xl font-bricolage font-bold mb-6 text-[var(--primary-color)]'
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -434,7 +416,7 @@ export default function AboutPage() {
             transition={{ duration: 0.6, ease: 'easeOut' }}
           >
             Our Gallery
-          </motion.h1>
+          </motion.h2>
 
           {/* Filter Buttons */}
           <div className="flex flex-wrap justify-start gap-4 mb-12">
