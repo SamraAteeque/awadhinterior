@@ -15,24 +15,19 @@ export default function HeroSection() {
   return (
     <section className="relative w-full h-screen overflow-hidden z-10">
 
-      {/* ── Full-screen background image ── */}
+      {/* ── Full-screen background image (single request: <picture> serves only the matching crop per viewport) ── */}
       <div className="absolute inset-0">
-        <img
-          src="/hero-mobile.png"
-          alt="Beautifully designed interior by Awadh Interior Designer"
-          className="absolute inset-0 w-full h-full object-cover lg:hidden"
-          loading="eager"
-          fetchPriority="high"
-          decoding="sync"
-        />
-        <img
-          src="/originals/hero.png"
-          alt="Beautifully designed interior by Awadh Interior Designer"
-          className="absolute inset-0 w-full h-full object-cover hidden lg:block"
-          loading="eager"
-          fetchPriority="high"
-          decoding="sync"
-        />
+        <picture>
+          <source media="(min-width: 1024px)" srcSet="/hero-desktop.jpg" />
+          <img
+            src="/hero-mobile.jpg"
+            alt="Beautifully designed interior by Awadh Interior Designer"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
+          />
+        </picture>
         {/* Dark gradient overlay for text readability across the whole image */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/25" />
       </div>
