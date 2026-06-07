@@ -11,7 +11,6 @@ const PortfolioSection    = dynamic(() => import("./components/PortfolioSection"
 const BeforeAfterSection  = dynamic(() => import("./components/BeforeAfterSection"));
 const VideoBanner         = dynamic(() => import("./components/VideoBanner"));
 const MarqueeStrip        = dynamic(() => import("./components/MarqueeStrip"));
-const TrustedSuppliers = dynamic(() => import("./components/TrustedSuppliers"));
 const BlogPreview = dynamic(() => import("./components/BlogPreview"));
 const TestimonialsSection = dynamic(() => import("./components/TestimonialsSection"));
 
@@ -39,7 +38,6 @@ export default function Home() {
       <VideoBanner />
       <TestimonialsSection />
       <BlogPreview />
-      <TrustedSuppliers />
     </>
   );
 }

@@ -225,6 +225,92 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* --- Co-Founder Story Section --- */}
+        <section className="bg-[var(--bg-warm)] px-[8%] lg:px-[12%] py-20 lg:py-28">
+          <div className="container mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+              {/* Story Content */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <p className="font-jost text-[var(--primary-color)] uppercase tracking-[0.25em] text-xs mb-5 font-semibold">
+                  The Co-Founder&apos;s Journey
+                </p>
+                <h2 className="text-4xl lg:text-5xl font-bold font-bricolage text-[var(--primary-color)] tracking-tighter leading-[1.05] mb-8">
+                  Himayat
+                </h2>
+
+                {/* Quote */}
+                <blockquote className="border-l-[3px] border-[var(--accent-gold)] pl-6 mb-8">
+                  <p className="font-dm-serif italic text-xl text-[var(--text-dark)] leading-relaxed">
+                    &ldquo;Good design means nothing if it isn&apos;t executed with precision — that&apos;s the half of the job most people never see.&rdquo;
+                  </p>
+                </blockquote>
+
+                <div className="space-y-5 font-jost text-[var(--text-mid)] text-base leading-relaxed mb-10">
+                  <p>
+                    Himayat leads execution and on-ground project management at Awadh Interior — turning approved designs into finished spaces without compromise. His focus on site discipline, vendor coordination, and quality checks at every stage is what allows the firm to consistently deliver on the timelines it promises.
+                  </p>
+                  <p>
+                    With a sharp eye for craftsmanship and a hands-on approach to every site visit, Himayat ensures the gap between a 3D render and the final handover stays as small as possible — so clients get exactly what they were shown, built to last.
+                  </p>
+                </div>
+
+                {/* Focus areas */}
+                <div className="grid grid-cols-3 gap-4 pt-8 border-t border-[var(--accent-gold)]/10">
+                  {[
+                    { label: 'Execution', event: 'On-site project management' },
+                    { label: 'Quality', event: 'Material & finish inspection' },
+                    { label: 'Vendors', event: 'Craftsmen & supplier coordination' },
+                  ].map((item, i) => (
+                    <div key={i}>
+                      <p className="font-bricolage font-bold text-lg text-[var(--primary-color)]">
+                        {item.label}
+                      </p>
+                      <p className="font-jost text-xs text-[var(--text-mid)] leading-snug mt-1">
+                        {item.event}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+
+              {/* Founder Photo */}
+              <motion.div
+                className="relative"
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/team/member-2.jpg"
+                    fill
+                    alt="Himayat — Co-Founder, Awadh Interior Designer"
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 90vw, 45vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                </div>
+
+                {/* Badge */}
+                <div className="absolute -bottom-5 -left-5 bg-[var(--primary-color)] text-white px-7 py-5 rounded-2xl shadow-2xl">
+                  <p className="font-bricolage font-bold text-4xl leading-none">200+</p>
+                  <p className="font-jost text-xs uppercase tracking-widest text-[var(--text-light)] mt-1">
+                    Projects<br />Executed
+                  </p>
+                </div>
+              </motion.div>
+
+            </div>
+          </div>
+        </section>
+
         {/* --- Our Values Section --- */}
         <WhyChooseUsSection />
 

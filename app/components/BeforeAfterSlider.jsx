@@ -7,8 +7,8 @@ import Image from 'next/image';
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 
 export default function BeforeAfterSlider({
-    beforeSrc = '/ID4.jpg',
-    afterSrc  = '/ID1.jpg',
+    beforeSrc = '/originals/Before.png',
+    afterSrc  = '/originals/After.png',
     beforeAlt = 'Room before interior design',
     afterAlt  = 'Room after Awadh Interior transformation',
 }) {
@@ -81,7 +81,7 @@ export default function BeforeAfterSlider({
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 80vw"
                 />
-                <span className="absolute top-4 left-4 z-10 bg-black/55 backdrop-blur-sm text-white text-[11px] font-jost font-bold uppercase tracking-[0.18em] px-3.5 py-1.5 rounded-full pointer-events-none">
+                <span className="absolute top-4 right-4 z-10 bg-black/55 backdrop-blur-sm text-white text-[11px] font-jost font-bold uppercase tracking-[0.18em] px-3.5 py-1.5 rounded-full pointer-events-none">
                     Before
                 </span>
             </div>
@@ -98,7 +98,7 @@ export default function BeforeAfterSlider({
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 80vw"
                 />
-                <span className="absolute top-4 right-4 z-10 bg-[var(--primary-color)] text-white text-[11px] font-jost font-bold uppercase tracking-[0.18em] px-3.5 py-1.5 rounded-full pointer-events-none">
+                <span className="absolute top-4 left-4 z-10 bg-[var(--primary-color)] text-white text-[11px] font-jost font-bold uppercase tracking-[0.18em] px-3.5 py-1.5 rounded-full pointer-events-none">
                     After
                 </span>
             </div>

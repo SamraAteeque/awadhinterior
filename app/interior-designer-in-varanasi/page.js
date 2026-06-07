@@ -8,7 +8,6 @@ const ServicesSection = dynamic(() => import("../components/ServicesSection"));
 const PortfolioSection = dynamic(() => import("../components/PortfolioSection"));
 // const ExpertiseSection = dynamic(() => import("../components/ExpertiseSection"));
 const VideoBanner = dynamic(() => import("../components/VideoBanner"));
-const TrustedSuppliers = dynamic(() => import('../components/TrustedSuppliers'));
 const TestimonialsSection = dynamic(() => import("../components/TestimonialsSection"));
 
 export const metadata = {
@@ -34,7 +33,6 @@ export default function Page() {
       {/* <ExpertiseSection /> */}
       <VideoBanner />
       <TestimonialsSection />
-      <TrustedSuppliers />
     </>
   );
 }

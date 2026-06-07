@@ -29,10 +29,10 @@ export default function BeforeAfterSection() {
                         </p>
                         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-bricolage text-[var(--primary-color)] tracking-tighter leading-tight">
                             See The Difference<br />
-                            <span className="italic font-serif font-light opacity-55">We Make</span>
+                            <span className="italic font-serif text-[var(--accent-gold)]">We Make</span>
                         </h2>
                     </div>
-                    <p className="font-jost text-gray-500 text-base max-w-sm leading-relaxed lg:text-right">
+                    <p className="font-jost text-[var(--primary-color)]text-base max-w-sm leading-relaxed lg:text-right">
                         Drag the slider to reveal the transformation. Every project begins with a space and ends with a story.
                     </p>
                 </motion.div>
@@ -52,8 +52,8 @@ export default function BeforeAfterSection() {
                       Using property images as demonstration placeholders for now.
                     */}
                     <BeforeAfterSlider
-                        beforeSrc="/ID4.jpg"
-                        afterSrc="/ID1.jpg"
+                        beforeSrc="/originals/Before.png"
+                        afterSrc="/originals/After.png"
                         beforeAlt="Living space before interior design intervention"
                         afterAlt="Beautifully transformed space by Awadh Interior Designer"
                     />
@@ -73,7 +73,7 @@ export default function BeforeAfterSection() {
                                 <div className="text-center">
                                     <p className="font-bricolage font-bold text-2xl text-[var(--primary-color)] leading-none">
                                         {stat.value}
-                                        <span className="text-sm text-[var(--text-light)] ml-1">{stat.unit}</span>
+                                        <span className="text-sm  text-[var(--accent-gold)] ml-1">{stat.unit}</span>
                                     </p>
                                     <p className="font-jost text-[10px] text-gray-400 uppercase tracking-widest mt-1">
                                         {stat.label}
@@ -88,7 +88,7 @@ export default function BeforeAfterSection() {
 
                     <Link href="/contact">
                         <motion.button
-                            className="shrink-0 px-8 py-3.5 bg-[var(--primary-color)] text-white font-jost font-semibold text-sm rounded-full shadow-lg hover:bg-[#2a4542] transition-colors"
+                            className="shrink-0 px-8 py-3.5 bg-[var(--accent-gold)] text-white font-jost font-semibold text-sm rounded-full shadow-lg hover:bg-[#2a4542] transition-colors"
                             whileHover={{ y: -2, boxShadow: '0 14px 30px rgba(30,52,50,0.22)' }}
                             whileTap={{ scale: 0.97 }}
                             transition={{ duration: 0.2 }}

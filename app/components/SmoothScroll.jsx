@@ -3,6 +3,12 @@
 import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import Lenis from 'lenis';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+if (typeof window !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger);
+}
 
 export default function SmoothScroll({ children }) {
     const lenisRef = useRef(null);
@@ -23,17 +29,18 @@ export default function SmoothScroll({ children }) {
 
         lenisRef.current = lenis;
 
-        // Store the RAF id so we can cancel it on unmount.
-        // Without this, the raf loop keeps firing on the destroyed Lenis instance.
-        let rafId;
-        function raf(time) {
-            lenis.raf(time);
-            rafId = requestAnimationFrame(raf);
-        }
-        rafId = requestAnimationFrame(raf);
+        // Keep ScrollTrigger's scroll position in sync with Lenis's virtual
+        // scroll. Without this, scrubbed animations (e.g. the Hero -> About
+        // transition) read a stale native scroll position and visibly stutter
+        // / hang as the two systems fight over the scroll position each frame.
+        lenis.on('scroll', ScrollTrigger.update);
+
+        const update = (time) => lenis.raf(time * 1000);
+        gsap.ticker.add(update);
+        gsap.ticker.lagSmoothing(0);
 
         return () => {
-            cancelAnimationFrame(rafId);
+            gsap.ticker.remove(update);
             lenis.destroy();
             lenisRef.current = null;
         };

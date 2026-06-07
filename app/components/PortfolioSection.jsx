@@ -24,23 +24,23 @@ export default function PortfolioSection() {
           className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14 lg:mb-20"
         >
           <div>
-            <span className="inline-flex items-center gap-2 font-jost text-[10.5px] uppercase tracking-[0.2em] text-[#6B6560] mb-5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C9A96E]" />
+            <span className="inline-flex items-center gap-2 font-jost text-[10.5px] uppercase tracking-[0.2em] text-[#6B6560] mb-5 ext-[var(--primary-color)]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C9A96E] text-[var(--primary-color)]" />
               Selected Work
             </span>
             <h2
               className="font-bricolage font-bold text-[#1A2E24] leading-[0.95]"
               style={{ fontSize: 'clamp(3rem, 7vw, 6.5rem)' }}
             >
-              Projects<br />
-              <span className="font-dm-serif font-medium italic text-[#6B6560]">Crafted</span><br />
-              With Care.
+              Projects Crafted<br />
+              <span className="font-dm-serif italic text-[var(--accent-gold)]"> With Care.</span><br />
+             
             </h2>
           </div>
 
           <Link
             href="/properties"
-            className="group self-end sm:self-auto inline-flex items-center gap-3 font-jost text-xs font-bold uppercase tracking-[0.18em] text-[#1A2E24] hover:text-[#C9A96E] transition-colors duration-300 whitespace-nowrap"
+            className="group self-end sm:self-auto inline-flex items-center gap-3 font-jost text-xs font-bold uppercase tracking-[0.18em] text-[var(--accent-gold)] hover:text-[#C9A96E] transition-colors duration-300 whitespace-nowrap"
           >
             Explore All Projects
             <span className="block w-8 h-[1.5px] bg-current group-hover:w-14 transition-all duration-300" />
@@ -65,7 +65,7 @@ export default function PortfolioSection() {
                   {/* Project number (decorative) */}
                   <span
                     aria-hidden="true"
-                    className="absolute top-4 right-5 z-10 font-bricolage font-black text-white/20 leading-none select-none"
+                    className="absolute top-4 right-5 z-10 font-bricolage font-black text-[var(--accent-gold)] leading-none select-none"
                     style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
                   >
                     {String(index + 1).padStart(2, '0')}
@@ -84,7 +84,7 @@ export default function PortfolioSection() {
 
                   {/* View project pill */}
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <span className="bg-white/92 backdrop-blur-sm text-[#1A2E24] font-jost font-bold text-xs uppercase tracking-widest px-5 py-2.5 rounded-full shadow-lg translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400">
+                    <span className="bg-white/92 backdrop-blur-sm text-[#1A2E24] font-jost font-bold text-xs uppercase tracking-widest px-5 py-2.5 rounded-full shadow-lg translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400 ">
                       View Project ↗
                     </span>
                   </div>
@@ -126,14 +126,14 @@ export default function PortfolioSection() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-14 lg:mt-20 pt-10 border-t border-[#1A2E24]/10 flex flex-col sm:flex-row items-center justify-between gap-6"
         >
-          <p className="font-jost text-sm text-[#6B6560] max-w-xs text-center sm:text-left leading-relaxed">
+          <p className="font-jost text-sm text-[var(--primary-color)] max-w-xs text-center sm:text-left leading-relaxed">
             Each project is a unique story of space, light, and craftsmanship.
           </p>
           <Link href="/properties">
             <motion.button
               whileHover={{ y: -2, boxShadow: '0 14px 32px rgba(26,46,36,0.18)' }}
               whileTap={{ scale: 0.97 }}
-              className="px-8 py-3.5 bg-[#1A2E24] text-white font-jost font-semibold text-sm rounded-full shadow-md hover:bg-[#243d32] transition-colors cursor-pointer"
+              className="px-8 py-3.5 bg-[var(--accent-gold)] text-white font-jost font-semibold text-sm rounded-full shadow-md hover:bg-[#243d32] transition-colors cursor-pointer"
             >
               View Full Portfolio →
             </motion.button>

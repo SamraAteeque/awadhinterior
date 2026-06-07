@@ -42,14 +42,14 @@ export default function WhyChooseUsSection() {
                             viewport={{ once: true }}
                             className="text-4xl lg:text-5xl font-semibold text-[var(--primary-color)] mb-4 tracking-tight"
                         >
-                            Why Choose Us
+                            Why Choose <span className="italic font-serif text-[var(--accent-gold)]"> Us?</span>
                         </motion.h2>
                         <motion.p 
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="text-gray-500 font-jost text-sm max-w-md mb-12"
+                            className="text-[var(--primary-color)] font-jost text-sm max-w-md mb-12"
                         >
                             Design is not just about decorating a space — it is about creating an experience you live in every day.
                         </motion.p>

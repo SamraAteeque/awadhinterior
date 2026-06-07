@@ -51,7 +51,7 @@ export default function BlogPreview() {
             <motion.button
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-3 font-jost font-bold text-xs uppercase tracking-[0.18em] text-[var(--primary-color)] hover:text-[var(--accent-gold)] transition-colors duration-300 cursor-pointer flex-shrink-0"
+              className="inline-flex items-center gap-3 font-jost font-bold text-xs uppercase tracking-[0.18em] text-[var(--accent-gold)] hover:text-[var(--accent-gold)] transition-colors duration-300 cursor-pointer flex-shrink-0"
             >
               View All Articles
               <span className="w-8 h-[1.5px] bg-current" />
@@ -121,14 +121,14 @@ export default function BlogPreview() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-12 pt-10 border-t border-[var(--accent-gold)]/15 flex flex-col sm:flex-row items-center justify-between gap-4"
         >
-          <p className="font-jost text-sm text-[var(--text-mid)] max-w-sm text-center sm:text-left">
+          <p className="font-jost text-sm text--[var(--primary-color)] max-w-sm text-center sm:text-left">
             Expert guides on materials, costs, design trends, and everything you need to plan your dream interior.
           </p>
           <Link href="/blog">
             <motion.button
               whileHover={{ y: -2, boxShadow: '0 10px 24px rgba(201,169,110,0.25)' }}
               whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-3 px-7 py-3.5 bg-[var(--primary-color)] text-white font-jost font-semibold text-sm rounded-full hover:bg-[var(--accent-gold)] transition-colors duration-300 cursor-pointer flex-shrink-0"
+              className="inline-flex items-center gap-3 px-7 py-3.5 bg-[var(--accent-gold)] text-white font-jost font-semibold text-sm rounded-full hover:bg-[var(--primary-color)] transition-colors duration-300 cursor-pointer flex-shrink-0"
             >
               Visit Our Blog
               <i className="ri-arrow-right-line" />

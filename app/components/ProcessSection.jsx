@@ -29,7 +29,7 @@ export default function ProcessSection() {
                         </p>
                         <h2 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold font-bricolage leading-[0.95] text-white tracking-tighter">
                             Our Refined <br />
-                            <span className="italic font-serif font-light opacity-50">Design Process</span>
+                            <span className="italic font-serif text-[var(--accent-gold)]">Design Process</span>
                         </h2>
                     </div>
 

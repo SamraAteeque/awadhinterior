@@ -36,7 +36,7 @@ export default function BlogPage() {
     <>
       {/* ── Page Header ── */}
       <motion.header
-        className="relative h-[60vh] overflow-hidden flex items-end pb-16 lg:pb-24"
+        className="relative h-[60vh] overflow-hidden flex items-center justify-center text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -48,7 +48,7 @@ export default function BlogPage() {
           className="object-cover z-0 brightness-[0.35]"
           priority
         />
-        <div className="relative z-20 px-5 sm:px-8 lg:px-14 xl:px-20 w-full">
+        <div className="relative z-20 px-5 sm:px-8 lg:px-14 xl:px-20 w-full flex flex-col items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

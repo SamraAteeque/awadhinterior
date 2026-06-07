@@ -13,12 +13,16 @@ export default function GSAPHeroAboutWrapper({ heroComponent, aboutComponent }) 
     const heroRef = useRef(null);
 
     useEffect(() => {
-        let ctx = gsap.context(() => {
-            gsap.to(heroRef.current, {
+        const mm = gsap.matchMedia();
+
+        // Full 3D tilt effect — desktop only, where GPUs handle combined
+        // rotateX/scale/border-radius transforms smoothly.
+        mm.add('(min-width: 1024px)', () => {
+            const tween = gsap.to(heroRef.current, {
                 scrollTrigger: {
                     trigger: containerRef.current,
                     start: 'top top',
-                    end: 'bottom bottom', // Animate as you scroll through the 150vh container
+                    end: 'bottom bottom',
                     scrub: 1,
                 },
                 rotateX: 20,
@@ -29,9 +33,28 @@ export default function GSAPHeroAboutWrapper({ heroComponent, aboutComponent }) 
                 transformOrigin: '50% 100%',
                 ease: 'none'
             });
+            return () => tween.scrollTrigger?.kill();
         });
 
-        return () => ctx.revert();
+        // Lighter fade + scale on phones/tablets — animating 3D transforms
+        // and border-radius together was causing the scroll to visibly hang
+        // during the Hero -> About handoff on lower-powered devices.
+        mm.add('(max-width: 1023px)', () => {
+            const tween = gsap.to(heroRef.current, {
+                scrollTrigger: {
+                    trigger: containerRef.current,
+                    start: 'top top',
+                    end: 'bottom bottom',
+                    scrub: 1,
+                },
+                scale: 0.96,
+                opacity: 0,
+                ease: 'none'
+            });
+            return () => tween.scrollTrigger?.kill();
+        });
+
+        return () => mm.revert();
     }, []);
 
     return (

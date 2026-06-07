@@ -40,8 +40,9 @@ export default function VideoBanner() {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.8, ease: EASE_CUBIC_OUT }}
                 >
-                    <h2 className='text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bricolage font-bold text-white mb-6 md:mb-8 max-w-4xl leading-[1.1]'>
-                        Ready for a Space Upgrade?
+                    <h2 className='text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bricolage font-bold  text-[var(--primary-color)] mb-6 md:mb-8 max-w-4xl leading-[1.1]'>
+                        Ready for a Space
+                        <span className='italic font-serif text-[var(--accent-gold)]'> Upgrade?</span>
                     </h2>
                     <p className='text-base sm:text-lg md:text-xl text-gray-100 mb-10 md:mb-12 max-w-2xl font-jost mr-auto opacity-90'>
                         Let's collaborate to create an interior that truly reflects your style and needs.

@@ -113,9 +113,10 @@ export default function TestimonialsSection() {
                     <div className="text-left lg:sticky lg:top-32 px-2 sm:px-4">
                         <span className="font-jost text-[var(--accent-gold)] font-semibold tracking-widest uppercase text-sm mb-4 block">Testimonials</span>
                         <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold font-bricolage leading-[1.1] text-[var(--primary-color)] mb-8">
-                            Hear What Our<br />Clients Say <span className="text-red-500">♥</span>
+                            Hear What Our<br />
+                            <span className="italic font-serif text-[var(--accent-gold)]">Clients Say</span> <span className="text-red-500">♥</span>
                         </h2>
-                        <p className="font-jost text-lg text-gray-600 leading-relaxed mb-10 max-w-md">
+                        <p className="font-jost text-lg text-[var(--primary-color)] leading-relaxed mb-10 max-w-md">
                             We take pride in building lasting relationships. Here's feedback from some of the people we've had the pleasure of working with.
                         </p>
 
@@ -145,7 +146,7 @@ export default function TestimonialsSection() {
 
                             <div>
                                 <div className="flex items-center gap-1.5 mb-0.5">
-                                    <span className="font-bricolage font-bold text-xl text-gray-900 leading-none">4.8</span>
+                                    <span className="font-bricolage font-bold text-xl text-gray-900 leading-none">5.0</span>
                                     <div className="flex items-center gap-0.5" aria-label="4.8 out of 5 stars">
                                         {[1, 2, 3, 4].map(i => (
                                             <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="#FBBC05" aria-hidden="true">
@@ -172,7 +173,7 @@ export default function TestimonialsSection() {
 
                         <button
                             onClick={() => setIsModalOpen(true)}
-                            className="font-jost font-semibold text-base bg-[var(--primary-color)] text-white px-8 py-3.5 rounded-full hover:bg-[#2a4542] transition-colors shadow-lg hover:shadow-xl flex items-center gap-2"
+                            className="font-jost font-semibold text-base bg-[var(--accent-gold)] text-white px-8 py-3.5 rounded-full hover:bg-[#2a4542] transition-colors shadow-lg hover:shadow-xl flex items-center gap-2"
                         >
                             <i className="ri-chat-smile-2-line text-xl"></i> Leave a Review
                         </button>

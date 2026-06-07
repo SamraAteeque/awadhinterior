@@ -67,7 +67,7 @@ export default function ServiceAreasPage() {
   return (
     <>
       {/* ── Header ── */}
-      <header className="relative h-[55vh] overflow-hidden flex items-end pb-16">
+      <header className="relative h-[55vh] overflow-hidden flex items-center justify-center text-center">
         <Image
           src="/ID6.jpg"
           alt="Interior design across Eastern UP"
@@ -76,14 +76,14 @@ export default function ServiceAreasPage() {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-        <div className="relative z-20 px-5 sm:px-8 lg:px-14 xl:px-20 w-full max-w-[1440px] mx-auto">
+        <div className="relative z-20 px-5 sm:px-8 lg:px-14 xl:px-20 w-full max-w-[1440px] mx-auto flex flex-col items-center">
           <p className="font-jost text-[var(--accent-gold)] uppercase tracking-[0.22em] text-xs mb-4">
             Where We Work
           </p>
           <h1 className="font-bricolage font-bold text-white leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 5.5rem)' }}>
             Interior Design Services<br />Across Eastern UP
           </h1>
-          <p className="font-jost text-white/65 text-base max-w-xl mt-4 leading-relaxed">
+          <p className="font-jost text-white/65 text-base max-w-xl mt-4 leading-relaxed mx-auto">
             From our base in Azamgarh, we design and execute residential and commercial interiors across five cities in Eastern Uttar Pradesh — with the same quality standards and transparent process at every location.
           </p>
         </div>

@@ -18,7 +18,7 @@ const cardVariants = { hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 
 const ServiceCard = ({ service }) => (
     <Link href="/services" aria-label={`Learn more about ${service.title}`}>
         <motion.div
-            className="group relative p-8 border border-gray-200/60 rounded-2xl bg-white overflow-hidden transition-all duration-300 hover:border-transparent cursor-pointer"
+            className="group relative p-8 border border-gray-200/60 rounded-2xl  text-(var(--accent-gold)),  overflow-hidden transition-all duration-300 hover:border-transparent cursor-pointer"
             variants={cardVariants}
             whileHover={{
                 y: -8,
@@ -30,7 +30,7 @@ const ServiceCard = ({ service }) => (
 
             <div className="relative z-20">
                 <div className="w-16 h-16 mb-8 flex items-center justify-center rounded-full bg-[var(--primary-color)]/5 group-hover:bg-white/10 transition-colors duration-300">
-                    <i className={`${service.icon} text-3xl text-[var(--primary-color)] group-hover:text-white transition-colors duration-300`}></i>
+                    <i className={`${service.icon} text-3xl text-[var(--accent-gold)] group-hover:text-[var(--accent-gold)] transition-colors duration-300`}></i>
                 </div>
                 <h3 className="text-2xl font-bricolage font-semibold mb-4 text-gray-800 group-hover:text-white transition-colors duration-300">
                     {service.title}
@@ -62,7 +62,7 @@ export default function ServicesSection() {
                         </p>
                         <h2 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-bold font-bricolage leading-[1] text-[var(--primary-color)]">
                             Services We <br />
-                            <span className="italic font-serif opacity-80 font-light text-[var(--primary-color)]">Provide</span>
+                            <span className="italic font-serif text-[var(--accent-gold)]">Provide</span>
                         </h2>
                     </motion.div>
                     <motion.div
@@ -72,7 +72,7 @@ export default function ServicesSection() {
                         transition={{ duration: 0.7, delay: 0.1 }}
                         className="max-w-2xl mr-auto"
                     >
-                        <p className="font-jost text-lg text-[var(--text-mid)] leading-relaxed">
+                        <p className="font-jost font-semibold text-lg text-[var(--text-mid)] leading-relaxed">
                             Whether you're dreaming of a cozy home retreat or a bold, modern workspace, our experts bring your vision to life with creativity and precision.
                         </p>
                     </motion.div>
@@ -93,7 +93,7 @@ export default function ServicesSection() {
                 <div className="text-center mt-16 md:mt-20">
                     <Link href="/services">
                         <motion.button
-                            className="font-jost font-semibold text-base text-white bg-[var(--primary-color)] px-10 py-4 rounded-full hover:bg-[#2a4542] transition-all duration-300 shadow-lg"
+                            className="font-jost font-semibold text-base text-white bg-[var(--accent-gold)] px-10 py-4 rounded-full hover:bg-[#2a4542] transition-all duration-300 shadow-lg"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
