@@ -18,7 +18,9 @@ export default function HeroSection() {
       {/* ── Full-screen background image (single request: <picture> serves only the matching crop per viewport) ── */}
       <div className="absolute inset-0">
         <picture>
-          <source media="(min-width: 1024px)" srcSet="/hero-desktop.jpg" />
+          <source media="(min-width: 1024px)" srcSet="/hero-desktop.webp" type="image/webp" />
+          <source media="(min-width: 1024px)" srcSet="/hero-desktop.jpg" type="image/jpeg" />
+          <source srcSet="/hero-mobile.webp" type="image/webp" />
           <img
             src="/hero-mobile.jpg"
             alt="Beautifully designed interior by Awadh Interior Designer"

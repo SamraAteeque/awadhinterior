@@ -193,20 +193,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
-        {/* Preload LCP Images */}
+        {/* Preload LCP Images — WebP first (matches <picture> source order: smaller, modern browsers use these) */}
         <link
           rel="preload"
           as="image"
-          href="/hero-mobile.jpg"
-          type="image/jpeg"
+          href="/hero-mobile.webp"
+          type="image/webp"
           media="(max-width: 1023px)"
           fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
-          href="/hero-desktop.jpg"
-          type="image/jpeg"
+          href="/hero-desktop.webp"
+          type="image/webp"
           media="(min-width: 1024px)"
           fetchPriority="high"
         />
