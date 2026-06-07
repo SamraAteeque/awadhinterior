@@ -106,7 +106,7 @@ export default function RootLayout({ children }) {
     "description": "Top-rated interior design firm serving Azamgarh, Mau, Varanasi, Lucknow and Gorakhpur. Specialising in residential interiors, modular kitchens, false ceilings, and commercial fit-outs since 2019.",
     "image": [
       "https://awadhinteriordesigner.in/og-image.jpg",
-      "https://awadhinteriordesigner.in/hero.jpg"
+      "https://awadhinteriordesigner.in/hero-desktop.jpg"
     ],
     "logo": {
       "@type": "ImageObject",
@@ -194,20 +194,20 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
         {/* Preload LCP Images */}
-        <link 
-          rel="preload" 
-          as="image" 
-          href="/hero-mobile.jpg" 
-          type="image/jpeg" 
-          media="(max-width: 768px)" 
+        <link
+          rel="preload"
+          as="image"
+          href="/hero-mobile.jpg"
+          type="image/jpeg"
+          media="(max-width: 1023px)"
           fetchPriority="high"
         />
-        <link 
-          rel="preload" 
-          as="image" 
-          href="/hero.jpg" 
-          type="image/jpeg" 
-          media="(min-width: 769px)" 
+        <link
+          rel="preload"
+          as="image"
+          href="/hero-desktop.jpg"
+          type="image/jpeg"
+          media="(min-width: 1024px)"
           fetchPriority="high"
         />
         <script dangerouslySetInnerHTML={{
