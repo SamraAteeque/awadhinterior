@@ -1,0 +1,68 @@
+/*
+ * Minimal Remix Icon subset — only the ~48 glyphs actually used on this site,
+ * generated from node_modules/remixicon/fonts/remixicon.css (v4.6.0).
+ * Cuts ~149KB of icon CSS down to a few KB to remove it from the render-blocking
+ * critical path (the full library defines thousands of unused icon classes).
+ */
+@font-face {
+  font-family: "remixicon";
+  src: url("/fonts/remixicon.woff2") format("woff2");
+  font-display: swap;
+}
+
+[class^="ri-"], [class*=" ri-"] {
+  font-family: 'remixicon' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+}
+
+.ri-apps-2-line:before { content: "\ea42"; }
+.ri-arrow-down-s-line:before { content: "\ea4e"; }
+.ri-arrow-left-line:before { content: "\ea60"; }
+.ri-arrow-right-line:before { content: "\ea6c"; }
+.ri-arrow-right-up-line:before { content: "\ea70"; }
+.ri-box-3-line:before { content: "\f2f5"; }
+.ri-brush-2-line:before { content: "\eafb"; }
+.ri-building-2-line:before { content: "\eb09"; }
+.ri-building-line:before { content: "\eb0f"; }
+.ri-chat-3-line:before { content: "\eb51"; }
+.ri-chat-smile-2-line:before { content: "\eb6f"; }
+.ri-checkbox-circle-fill:before { content: "\eb80"; }
+.ri-checkbox-circle-line:before { content: "\eb81"; }
+.ri-checkbox-multiple-line:before { content: "\eb89"; }
+.ri-close-line:before { content: "\eb99"; }
+.ri-cloud-line:before { content: "\eb9d"; }
+.ri-draft-line:before { content: "\ec5c"; }
+.ri-error-warning-line:before { content: "\eca1"; }
+.ri-fridge-line:before { content: "\ed98"; }
+.ri-group-line:before { content: "\ede3"; }
+.ri-hammer-line:before { content: "\edef"; }
+.ri-home-4-line:before { content: "\ee1d"; }
+.ri-home-5-line:before { content: "\ee1f"; }
+.ri-image-2-line:before { content: "\ee45"; }
+.ri-image-line:before { content: "\ee4b"; }
+.ri-instagram-line:before { content: "\ee66"; }
+.ri-layout-bottom-2-line:before { content: "\ee89"; }
+.ri-layout-line:before { content: "\ee95"; }
+.ri-layout-masonry-line:before { content: "\ee97"; }
+.ri-layout-top-2-line:before { content: "\ee9f"; }
+.ri-loader-4-line:before { content: "\eec6"; }
+.ri-mail-line:before { content: "\eef6"; }
+.ri-map-pin-line:before { content: "\ef14"; }
+.ri-palette-line:before { content: "\efc5"; }
+.ri-phone-fill:before { content: "\efe9"; }
+.ri-phone-line:before { content: "\efec"; }
+.ri-plant-line:before { content: "\f007"; }
+.ri-ruler-2-line:before { content: "\f0a1"; }
+.ri-send-plane-fill:before { content: "\f0d9"; }
+.ri-sofa-line:before { content: "\f41e"; }
+.ri-sparkling-2-line:before { content: "\f36b"; }
+.ri-star-fill:before { content: "\f186"; }
+.ri-star-line:before { content: "\f18b"; }
+.ri-time-line:before { content: "\f20f"; }
+.ri-tools-line:before { content: "\f21b"; }
+.ri-user-line:before { content: "\f264"; }
+.ri-whatsapp-line:before { content: "\f2bc"; }
+.ri-window-2-line:before { content: "\f2c4"; }

@@ -8,7 +8,7 @@ const servicesData = [
     { icon: 'ri-layout-bottom-2-line', title: 'Floor Works', description: 'Expert design and installation of marble, tile, wooden, and vinyl flooring for durability and style.' },
     { icon: 'ri-window-2-line', title: 'Glass Works', description: 'Custom glass partitions, doors, and decorative panels that add lightness and elegance to any interior.' },
     { icon: 'ri-brush-2-line', title: 'Wallpaper', description: 'A curated selection and professional installation of wallpapers to create stunning, textured accent walls.' },
-    { icon: 'ri-kitchen-line', title: 'Modular Kitchen', description: 'Ergonomic, Indian-kitchen-optimised designs with soft-close hardware, granite tops, and 5-year warranty.' },
+    { icon: 'ri-fridge-line', title: 'Modular Kitchen', description: 'Ergonomic, Indian-kitchen-optimised designs with soft-close hardware, granite tops, and 5-year warranty.' },
     { icon: 'ri-layout-top-2-line', title: 'False Ceiling', description: 'POP, Gypsum, and PVC false ceiling designs with integrated LED cove lighting and crack-resistant finish.' },
 ];
 

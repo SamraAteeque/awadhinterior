@@ -11,7 +11,7 @@ const servicesData = [
   { icon: 'ri-home-4-line', title: 'Floor Works', description: 'Expert design and installation of various flooring materials for durability and style.' },
   { icon: 'ri-apps-2-line', title: 'Glass Works', description: 'Custom glass solutions for partitions, doors, and decorative elements that add elegance to any interior.' },
   { icon: 'ri-image-line', title: 'Wallpaper', description: 'A curated selection and professional application of wallpapers to create stunning accent walls.' },
-  { icon: 'ri-kitchen-line', title: 'Modular Kitchen', description: 'Designing and installing efficient, stylish, and functional modular kitchens tailored to your space.' },
+  { icon: 'ri-fridge-line', title: 'Modular Kitchen', description: 'Designing and installing efficient, stylish, and functional modular kitchens tailored to your space.' },
   { icon: 'ri-cloud-line', title: 'False Ceiling', description: 'Creative false ceiling designs with integrated lighting to enhance the ambiance of any room.' },
   { icon: 'ri-layout-masonry-line', title: 'Wall Paneling', description: 'Adding texture and character to walls with custom decorative paneling in a variety of materials.' },
   { icon: 'ri-sofa-line', title: 'Designer Furniture', description: 'Sourcing and custom-designing bespoke furniture pieces that perfectly complement your interior design.' },
