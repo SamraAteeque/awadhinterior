@@ -94,6 +94,7 @@ export default function Preloader() {
                                         alt="Awadh Interior Designer Logo"
                                         fill
                                         className="object-cover"
+                                        sizes="96px"
                                         priority
                                     />
                                 </motion.div>

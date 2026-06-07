@@ -106,7 +106,6 @@ export default function AboutSection() {
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 55vw"
-                priority
               />
             </motion.div>
           </div>
