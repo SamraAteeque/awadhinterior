@@ -11,14 +11,14 @@ import PageTransitionProvider from "./components/PageTransitionProvider"
 const jost = Jost({
   variable: '--font-jost',
   subsets: ['latin'],
-  weight: ['100', '400', '600', '700', '900'],
+  weight: ['400', '600', '700'],
   display: 'swap',
 });
 
 const bricolage = Bricolage_Grotesque({
   variable: '--font-bricolage',
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '600', '700'],
   display: 'swap',
 });
 
