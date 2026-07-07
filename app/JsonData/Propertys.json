@@ -1,5 +1,39 @@
 [
   {
+    "id": 0,
+    "title": "Bungalow",
+    "location": "Hathiya, Azamgarh",
+    "image": "/properties/p10.png",
+    "detailImage": "/properties/p0.png",
+    "type": "Residential",
+    "overview": "A complete premium bungalow interior project designed with modern furniture, modular kitchen, elegant bedrooms, luxury finishes, and functional living spaces.",
+    "description": "This bungalow interior project includes complete end-to-end interior work, covering bedrooms, living area, modular kitchen, furniture, ceiling design, lighting, wall paneling, wardrobes, wooden work, painting, tiles, POP molding, electrical work, and fabrication. The design focuses on comfort, elegance, space optimization, and a premium modern lifestyle, creating a warm and luxurious home environment for the entire family.",
+    "amenities": [
+      "Complete Bungalow Interior",
+      "Modern Furniture Work",
+      "Modular Kitchen",
+      "Designer False Ceiling",
+      "LED Lighting",
+      "Wall Paneling",
+      "Modular Wardrobe",
+      "Living Room Interior",
+      "Bedroom Interior",
+      "Paint",
+      "Tile Work",
+      "POP Molding",
+      "Electrical Work",
+      "Wooden Work",
+      "Fabrication",
+      "Premium Finishing"
+    ],
+    "gallery": [
+      "/properties/gallery/bedroom-1.jpg",
+      "/properties/gallery/bedroom-2.jpg",
+      "/properties/gallery/bedroom-3.jpg",
+      "/properties/gallery/bedroom-4.jpg"
+    ]
+  },
+  {
     "id": 1,
     "title": "Premium Bedroom",
     "location": "Sidhari, Azamgarh",
@@ -8,7 +42,18 @@
     "type": "Residential",
     "overview": "A modern premium bedroom design that blends comfort and elegance through ambient lighting and luxury textures.",
     "description": "This bedroom interior is designed for peaceful relaxation with soft tones, upholstered headboards, wooden flooring, and a cozy false ceiling. The layout emphasizes warmth and space optimization, creating a perfect retreat for restful nights.",
-    "amenities": ["Designer False Ceiling", "LED Lighting", "Wall Paneling", "Modular Wardrobe", "Paint", "Tile", "POP Molding", "Electricity", "Wooden Work", "Fabrication"],
+    "amenities": [
+      "Designer False Ceiling",
+      "LED Lighting",
+      "Wall Paneling",
+      "Modular Wardrobe",
+      "Paint",
+      "Tile",
+      "POP Molding",
+      "Electricity",
+      "Wooden Work",
+      "Fabrication"
+    ],
     "gallery": [
       "/properties/gallery/bedroom-1.jpg",
       "/properties/gallery/bedroom-2.jpg",
@@ -25,7 +70,13 @@
     "type": "Residential",
     "overview": "An elegant bedroom featuring a custom modular false ceiling and warm indirect lighting for a luxurious ambience.",
     "description": "This space showcases a contemporary bedroom concept with layered ceiling lights, wooden textures, and an accent wall. The modular ceiling adds both dimension and charm, making the room vibrant yet calming.",
-    "amenities": ["False Ceiling Design", "Wooden Work", "PVC Molding", "G Profile Door", "Electricity"],
+    "amenities": [
+      "False Ceiling Design",
+      "Wooden Work",
+      "PVC Molding",
+      "G Profile Door",
+      "Electricity"
+    ],
     "gallery": [
       "/properties/gallery/falseceiling-1.jpg",
       "/properties/gallery/falseceiling-2.jpg",
@@ -35,19 +86,34 @@
   },
   {
     "id": 3,
-    "title": "Modular Salon",
-    "location": "Heerapatti, Azamgarh",
+    "title": "Modular Kitchen",
+    "location": "Millat Nagar, Azamgarh",
     "image": "/properties/p1.png",
-    "detailImage": "/properties/p7.jpg",
-    "type": "Commercial",
-    "overview": "A stylish modular salon interior designed for customer comfort and professional functionality.",
-    "description": "This salon interior integrates sleek mirrors, modern seating, organized workstations, and focused lighting. The modular setup enhances workflow for stylists while giving clients a luxury grooming experience.",
-    "amenities": ["Mirror Lighting", "False Ceiling Design", "Plumbing", "Tile", "Paint", "False Ceiling", "Electricity", "Wooden Work", "ACP and Signage Work", "Toughened Glass", "Wall Paneling", "Sofa with Fabrication", "Mirror"],
+    "detailImage": "/properties/p1.png",
+    "type": "Residential",
+    "overview": "A modern modular kitchen designed with smart storage, elegant finishes, durable materials, and a functional layout for everyday convenience.",
+    "description": "This modular kitchen project is designed to combine style, comfort, and practicality. The kitchen includes customized cabinets, premium wooden work, countertop installation, tile work, proper lighting, electrical fittings, and organized storage solutions. The layout is planned to make cooking easy, spacious, and efficient while giving the kitchen a clean and modern premium look.",
+    "amenities": [
+      "Modular Kitchen Cabinets",
+      "Premium Wooden Work",
+      "Kitchen Countertop",
+      "Wall Tiles",
+      "Floor Tiles",
+      "LED Lighting",
+      "Electrical Work",
+      "Plumbing Work",
+      "Storage Cabinets",
+      "Drawer Units",
+      "Kitchen Accessories",
+      "Chimney Space",
+      "Sink Area",
+      "Premium Finishing"
+    ],
     "gallery": [
-      "/properties/gallery/salon-1.jpg",
-      "/properties/gallery/salon-2.jpg",
-      "/properties/gallery/salon-3.jpg",
-      "/properties/gallery/salon-4.jpg"
+      "/properties/gallery/kitchen-1.jpg",
+      "/properties/gallery/kitchen-2.jpg",
+      "/properties/gallery/kitchen-3.jpg",
+      "/properties/gallery/kitchen-4.jpg"
     ]
   },
   {
@@ -59,7 +125,13 @@
     "type": "Commercial",
     "overview": "A compact yet premium mobile showroom interior optimized for brand presentation and customer interaction.",
     "description": "This mobile showroom design offers high-end display units, bright lighting, and flexible shelving suitable for on-the-go exhibitions or retail events. The space efficiently combines aesthetics with practicality.",
-    "amenities": ["Display Shelves", "Ambient Lighting", "Portable Setup", "Compact Counter", "Power Backup System"],
+    "amenities": [
+      "Display Shelves",
+      "Ambient Lighting",
+      "Portable Setup",
+      "Compact Counter",
+      "Power Backup System"
+    ],
     "gallery": [
       "/properties/gallery/showroom-1.jpg",
       "/properties/gallery/showroom-2.jpg",
@@ -76,7 +148,13 @@
     "type": "Commercial",
     "overview": "A premium restaurant interior combining ambient lighting with contemporary dining aesthetics.",
     "description": "The restaurant is designed to deliver a warm and luxurious dining experience. From the textured walls to elegant furniture and ceiling lights, every detail enhances the atmosphere for guests to enjoy meals in style.",
-    "amenities": ["Dining Area", "LED Ceiling Lights", "Wooden Furniture", "AC Setup", "Decorative Wall Panels"],
+    "amenities": [
+      "Dining Area",
+      "LED Ceiling Lights",
+      "Wooden Furniture",
+      "AC Setup",
+      "Decorative Wall Panels"
+    ],
     "gallery": [
       "/properties/gallery/restaurant-1.jpg",
       "/properties/gallery/restaurant-2.jpg",
@@ -93,7 +171,13 @@
     "type": "Residential",
     "overview": "A sleek modular kitchen design emphasizing space efficiency, functionality, and modern aesthetics.",
     "description": "This kitchen combines matte finishes, soft-close drawers, and under-cabinet lighting. The L-shaped layout ensures maximum storage and easy accessibility, making it both stylish and practical.",
-    "amenities": ["Soft-Close Cabinets", "Granite Countertop", "LED Under Lights", "Chimney & Hob", "Modular Storage"],
+    "amenities": [
+      "Soft-Close Cabinets",
+      "Granite Countertop",
+      "LED Under Lights",
+      "Chimney & Hob",
+      "Modular Storage"
+    ],
     "gallery": [
       "/properties/gallery/kitchen-1.jpg",
       "/properties/gallery/kitchen-2.jpg",
@@ -110,7 +194,13 @@
     "type": "Commercial",
     "overview": "A trendy fashion showroom interior designed to highlight products through elegant lighting and layout.",
     "description": "This boutique-style space offers open display racks, full-height mirrors, and clean lighting to emphasize the clothing collection. The modern textures and color palette make the store visually appealing to customers.",
-    "amenities": ["Display Racks", "Spot Lighting", "Trial Room", "Billing Counter", "AC System"],
+    "amenities": [
+      "Display Racks",
+      "Spot Lighting",
+      "Trial Room",
+      "Billing Counter",
+      "AC System"
+    ],
     "gallery": [
       "/properties/gallery/fashion-1.jpg",
       "/properties/gallery/fashion-2.jpg",
@@ -127,7 +217,13 @@
     "type": "Commercial",
     "overview": "A modern CA office setup designed for focus, organization, and a professional atmosphere.",
     "description": "The office features a minimalist design with ergonomic furniture, smart storage, and calm lighting. A subtle color palette enhances focus and creates an inviting yet efficient workspace for clients and employees.",
-    "amenities": ["Workstations", "Conference Desk", "Storage Units", "LED Lighting", "AC Environment"],
+    "amenities": [
+      "Workstations",
+      "Conference Desk",
+      "Storage Units",
+      "LED Lighting",
+      "AC Environment"
+    ],
     "gallery": [
       "/properties/gallery/office-1.jpg",
       "/properties/gallery/office-2.jpg",
@@ -137,6 +233,37 @@
   },
   {
     "id": 9,
+    "title": "Modular Salon",
+    "location": "Heerapatti, Azamgarh",
+    "image": "/properties/p11.png",
+    "detailImage": "/properties/p11.png",
+    "type": "Commercial",
+    "overview": "A stylish modular salon interior designed for customer comfort and professional functionality.",
+    "description": "This salon interior integrates sleek mirrors, modern seating, organized workstations, and focused lighting. The modular setup enhances workflow for stylists while giving clients a luxury grooming experience.",
+    "amenities": [
+      "Mirror Lighting",
+      "False Ceiling Design",
+      "Plumbing",
+      "Tile",
+      "Paint",
+      "False Ceiling",
+      "Electricity",
+      "Wooden Work",
+      "ACP and Signage Work",
+      "Toughened Glass",
+      "Wall Paneling",
+      "Sofa with Fabrication",
+      "Mirror"
+    ],
+    "gallery": [
+      "/properties/gallery/salon-1.jpg",
+      "/properties/gallery/salon-2.jpg",
+      "/properties/gallery/salon-3.jpg",
+      "/properties/gallery/salon-4.jpg"
+    ]
+  },
+  {
+    "id": 10,
     "title": "Wardrobe",
     "location": "Bramasthan, Azamgarh",
     "image": "/properties/p9.png",
@@ -144,7 +271,13 @@
     "type": "Residential",
     "overview": "A sleek modular wardrobe design offering a perfect blend of functionality and modern aesthetics.",
     "description": "This wardrobe setup features sliding shutters, integrated mirrors, and custom shelving for efficient organization. The design optimizes space while maintaining a polished, premium look suitable for any bedroom.",
-    "amenities": ["Sliding Doors", "Mirror Panels", "Custom Shelving", "Soft-Close Drawers", "LED Strip Lights"],
+    "amenities": [
+      "Sliding Doors",
+      "Mirror Panels",
+      "Custom Shelving",
+      "Soft-Close Drawers",
+      "LED Strip Lights"
+    ],
     "gallery": [
       "/properties/gallery/wardrobe-1.jpg",
       "/properties/gallery/wardrobe-2.jpg",

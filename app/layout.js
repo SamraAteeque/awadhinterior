@@ -34,8 +34,32 @@ export const metadata = {
     default: "Best Interior Designer in Azamgarh, Lucknow & Varanasi | Awadh Interior",
     template: "%s | Awadh Interior Designer"
   },
-  description: "Azamgarh's top interior designers — residential, modular kitchens & commercial. Free 3D design, transparent pricing. Serving Varanasi, Lucknow, Gorakhpur & Eastern UP since 2019.",
-  keywords: ["Interior Designer in Azamgarh", "Interior Designer in Mau", "Interior Designer in Varanasi", "Interior Designer in Lucknow", "Interior Designer in Gorakhpur", "Interior Design Services", "Modular Kitchen Design", "Home Interior", "Commercial Interior Designer UP", "Luxury Interiors"],
+  description: "Azamgarh's top interior designers residential, modular kitchens & commercial. Free 3D design, transparent pricing. Serving Varanasi, Lucknow, Gorakhpur & Eastern UP since 2019.",
+  keywords: [
+    "Interior Designer in Azamgarh",
+    "Interior Designer in Mau",
+    "Interior Designer in Varanasi",
+    "Interior Designer in Lucknow",
+    "Interior Designer in Gorakhpur",
+    "Interior Design Services",
+    "Modular Kitchen Design",
+    "Home Interior",
+    "Commercial Interior Designer UP",
+    "Luxury Interiors",
+    "interior designer azamgarh",
+    "interior near me",
+    "interior designer",
+    "wallpaper near me",
+    "interior designer in azamgarh",
+    "salon interior designer near me",
+    "Modular kitchen designer near me",
+    "home interior designer near me",
+    "office interior designer near me",
+    "fall ceiling designer near me",
+    "fall cielling designer near me",
+    "best interior designer near me",
+    "bedroom interior designer near me"
+  ],
   authors: [{ name: "Mohd Kamaal Khalid" }],
   creator: "Awadh Interior",
   publisher: "Awadh Interior",
@@ -147,7 +171,7 @@ export default function RootLayout({ children }) {
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "opens": "10:00",
         "closes": "20:00"
       }
@@ -156,9 +180,9 @@ export default function RootLayout({ children }) {
     "currenciesAccepted": "INR",
     "paymentAccepted": "Cash, Bank Transfer, UPI",
     "knowsAbout": [
-      "Residential Interior Design","Commercial Interior Design","Modular Kitchen Design",
-      "False Ceiling Design","3D Visualization","Space Planning","Vastu-Compliant Design",
-      "Wall Paneling","ACP Elevation","PVC False Ceiling"
+      "Residential Interior Design", "Commercial Interior Design", "Modular Kitchen Design",
+      "False Ceiling Design", "3D Visualization", "Space Planning", "Vastu-Compliant Design",
+      "Wall Paneling", "ACP Elevation", "PVC False Ceiling"
     ],
     "aggregateRating": {
       "@type": "AggregateRating",

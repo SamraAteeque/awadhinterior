@@ -11,7 +11,7 @@ const STATS = [
 
 const ease = [0.33, 1, 0.68, 1];
 
-export default function HeroSection() {
+export default function HeroSection({ title, subtitle }) {
   return (
     <section className="relative w-full h-screen overflow-hidden z-10">
 
@@ -61,9 +61,13 @@ export default function HeroSection() {
             className="font-dm-serif font-medium leading-[1.07] tracking-tight text-[var(--primary-color)]"
             style={{ fontSize: 'clamp(2.6rem, 5.5vw, 4.8rem)' }}
           >
-            Spaces Designed<br />
-            <em className="text-[var(--primary-color)]">For the Way</em><br />
-            You <span className="text-[var(--accent-gold)]">Live.</span>
+            {title || (
+              <>
+                Spaces Designed<br />
+                <em className="text-[var(--primary-color)]">For the Way</em><br />
+                You <span className="text-[var(--accent-gold)]">Live.</span>
+              </>
+            )}
           </motion.h1>
 
           {/* Subtext */}
@@ -73,10 +77,14 @@ export default function HeroSection() {
             transition={{ duration: 0.65, delay: 0.35 }}
             className="font-jost text-sm sm:text-base leading-relaxed text-white/70 max-w-[480px] mx-auto"
           >
-            Bespoke residential & commercial interiors across{' '}
-            <strong className="font-semibold text-white/90">
-              Azamgarh, Lucknow, Varanasi, Mau, and Gorakhpur.
-            </strong>
+            {subtitle || (
+              <>
+                Bespoke residential & commercial interiors across{' '}
+                <strong className="font-semibold text-white/90">
+                  Azamgarh, Lucknow, Varanasi, Mau, and Gorakhpur.
+                </strong>
+              </>
+            )}
           </motion.p>
 
           {/* CTA buttons */}

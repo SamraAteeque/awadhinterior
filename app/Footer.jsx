@@ -64,7 +64,7 @@ export default function Footer() {
       viewport={{ once: true, amount: 0.2 }}
     >
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 mb-16">
 
           {/* Column 1: Brand Info */}
           <motion.div variants={itemVariants} className="md:col-span-2 lg:col-span-1">
@@ -90,6 +90,18 @@ export default function Footer() {
               <li><Link href="/service-areas" className="hover:text-white transition-colors">Service Areas</Link></li>
               <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+            </ul>
+          </motion.div>
+
+          {/* Column 3: Service Areas */}
+          <motion.div variants={itemVariants}>
+            <h4 className="text-xl font-bricolage font-semibold text-white mb-6">Service Areas</h4>
+            <ul className="space-y-4 font-jost">
+              <li><Link href="/interior-designer-in-azamgarh" className="hover:text-white transition-colors">Azamgarh (HQ)</Link></li>
+              <li><Link href="/interior-designer-in-lucknow" className="hover:text-white transition-colors">Lucknow</Link></li>
+              <li><Link href="/interior-designer-in-varanasi" className="hover:text-white transition-colors">Varanasi</Link></li>
+              <li><Link href="/interior-designer-in-gorakhpur" className="hover:text-white transition-colors">Gorakhpur</Link></li>
+              <li><Link href="/interior-designer-in-mau" className="hover:text-white transition-colors">Mau</Link></li>
             </ul>
           </motion.div>
 

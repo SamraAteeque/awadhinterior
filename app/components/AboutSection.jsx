@@ -51,7 +51,7 @@ const stats = [
   { value: '5', label: 'Cities Served' },
 ];
 
-export default function AboutSection() {
+export default function AboutSection({ title, description, descriptionSecondary }) {
   return (
     <section className="relative w-full bg-[var(--bg-warm)] overflow-hidden py-16 lg:py-24">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-14 xl:px-20">
@@ -122,7 +122,11 @@ export default function AboutSection() {
                 transition={{ duration: 0.6 }}
                 className="font-dm-serif text-3xl sm:text-4xl lg:text-[2.6rem] text-[var(--primary-color)] font-medium tracking-tight"
               >
-                About <span className="italic text-[var(--accent-gold)]">Awadh Interior Designer</span>
+                {title || (
+                  <>
+                    About <span className="italic text-[var(--accent-gold)]">Awadh Interior Designer</span>
+                  </>
+                )}
               </motion.h2>
               <div className="w-12 h-[2px] bg-[var(--accent-gold)]/40" />
             </div>
@@ -136,7 +140,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="font-jost text-[var(--primary-color)] text-sm sm:text-base leading-relaxed"
               >
-                Awadh Interior Designer is a premier interior design firm dedicated to transforming spaces into beautiful and functional environments. We believe every space has a story, and we are here to bring that story to life.
+                {description || "Awadh Interior Designer is a premier interior design firm dedicated to transforming spaces into beautiful and functional environments. We believe every space has a story, and we are here to bring that story to life."}
               </motion.p>
 
               <motion.p
@@ -146,7 +150,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.6, delay: 0.15 }}
                 className="font-jost text-[var(--primary-color)] text-sm sm:text-[15px] leading-relaxed font-medium"
               >
-                We serve both private and commercial clients. From classic restoration to modern minimalism, we find the quintessence of their vision and elevate it equally in the scale of the design and its subtle details.
+                {descriptionSecondary || "We serve both private and commercial clients. From classic restoration to modern minimalism, we find the quintessence of their vision and elevate it equally in the scale of the design and its subtle details."}
               </motion.p>
             </div>
 
